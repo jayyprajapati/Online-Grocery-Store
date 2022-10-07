@@ -1,0 +1,143 @@
+<%- include("partial/header") -%>
+
+<section>
+  <div class="container">
+    <h2 class="title-h2">fruits</h2>
+    <div class="row text-center mb-5">
+      <% var display = fruits.slice(0,3)%> <% display.forEach(function(post){%>
+      <div class="col-lg-3 ml-5 mt-3">
+        <div class="card text-left" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="/imgs/<%= post.productImage %>"
+            height="190px"
+            alt="<%= post.title %>"
+          />
+          <div class="card-body">
+            <h5 class="card-title"><%= post.productName %></h5>
+            <p class="card-text text-secondary"><%= post.productCompany %></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><%= post.availability %></li>
+
+            <li class="list-group-item">Price : ₹ <%= post.price %>.00</li>
+          </ul>
+          <div class="card-body">
+            <a
+              href="#"
+              class="btn btn-secondary"
+              data-toggle="modal"
+              data-target="#myModal"
+              >Buy Now</a
+            >
+            <a href="/cart/<%= post._id%>" class="btn pr-2 ml-3 btn-warning"
+              >Cart</a
+            >
+          </div>
+        </div>
+      </div>
+      <% }); %>
+      <a class="mx-auto my-auto" href="/fruit"
+        ><button type="button" class="btn btn-outline-dark btn-circle btn-xl">
+          →
+        </button></a
+      >
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2 class="title-h2">Vegetables</h2>
+    <div class="row text-center mb-5">
+      <% var display1 = vegetables.slice(0,3)%> <%
+      display1.forEach(function(post){%>
+      <div class="col-lg-3 ml-5 mt-3">
+        <div class="card text-left" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="/imgs/<%= post.productImage %>"
+            height="190px"
+            alt="<%= post.title %>"
+          />
+          <div class="card-body">
+            <h5 class="card-title"><%= post.productName %></h5>
+            <p class="card-text text-secondary"><%= post.productCompany %></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><%= post.availability %></li>
+
+            <li class="list-group-item">Price : ₹ <%= post.price %>.00</li>
+          </ul>
+          <div class="card-body">
+            <a
+              href="#"
+              class="btn btn-secondary"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Buy Now</a
+            >
+            <a href="/cart/<%= post._id%>" class="btn pr-2 ml-3 btn-warning"
+              >Cart</a
+            >
+          </div>
+        </div>
+      </div>
+      <% }); %>
+      <a class="mx-auto my-auto" href="/vegetable"
+        ><button type="button" class="btn btn-outline-dark btn-circle btn-xl">
+          →
+        </button></a
+      >
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <h2 class="title-h2">Dairy Products</h2>
+    <div class="row text-center mb-5">
+      <% var display2 = dairies.slice(0,3)%> <%
+      display2.forEach(function(post){%>
+      <div class="col-lg-3 ml-5 mt-3">
+        <div class="card text-left" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="/imgs/<%= post.productImage %>"
+            height="190px"
+            alt="<%= post.title %>"
+          />
+          <div class="card-body">
+            <h5 class="card-title"><%= post.productName %></h5>
+            <p class="card-text text-secondary"><%= post.productCompany %></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><%= post.availability %></li>
+
+            <li class="list-group-item">Price : ₹ <%= post.price %>.00</li>
+          </ul>
+          <div class="card-body">
+            <a
+              href="#"
+              class="btn btn-secondary"
+              data-toggle="modal"
+              data-target="#myModal"
+            >
+              Buy Now</a
+            >
+            <a href="/cart/<%= post._id%>" class="btn pr-2 ml-3 btn-warning">
+              Cart</a
+            >
+          </div>
+        </div>
+      </div>
+      <% }); %>
+      <a class="mx-auto my-auto" href="/dairy"
+        ><button type="button" class="btn btn-outline-dark btn-circle btn-xl">
+          →
+        </button></a
+      >
+    </div>
+  </div>
+</section>
+
+<%- include("partial/footer") -%>

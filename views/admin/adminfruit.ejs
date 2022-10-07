@@ -1,0 +1,43 @@
+<%- include("../partial/adminheader") -%>
+<section>
+  <div class="container">
+    <h2 class="title-h2 text-center mt-3 mb-3">Fruits</h2>
+    <div class="row text-center mb-5">
+      <% fruits.forEach(function(post){%>
+      <div class="col-lg-3 ml-5 mt-3">
+        <div class="card text-left" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="/imgs/<%= post.productImage %>"
+            height="190px"
+            alt="<%= post.productName %>"
+          />
+          <div class="card-body">
+            <h5 class="card-title"><%= post.productName %></h5>
+            <p class="card-text text-secondary"><%= post.productCompany %></p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><%= post.availability %></li>
+
+            <li class="list-group-item">Price : ₹ <%= post.price %>.00</li>
+          </ul>
+          <div class="card-body">
+            <a
+              href="#"
+              class="btn btn-secondary"
+              data-toggle="modal"
+              data-target="#myModal"
+              ><i class="fas fa-dollar-sign"></i> Buy Now</a
+            >
+            <a href="/cart/<%= post._id%>" class="btn pr-2 ml-3 btn-warning"
+              ><i class="fas fa-cart-arrow-down"></i> Cart</a
+            >
+          </div>
+        </div>
+      </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<%- include("../partial/footer") -%>

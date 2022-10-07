@@ -1,0 +1,39 @@
+body {
+  margin: 1px;
+  background-image: linear-gradient(to right, rgba(237, 237, 237, 1), #333533);
+  /* font-family: "Commissioner", sans-serif;
+  color: #eeeeee;
+  font-size: 80px;
+  font-weight: bolder; */
+}
+
+.div {
+  position: absolute;
+  right: 1px;
+  top: 10px;
+  width: 50%;
+  height: 100%;
+  padding-top: 5%;
+}
+
+.div1 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 50%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.loginbtn {
+  position: absolute;
+  right: 35%;
+  top: 45%;
+  font-family: "Commissioner", sans-serif;
+  font-weight: bolder;
+}
+
+.form-fonts {
+  font-family: "Commissioner", sans-serif;
+  font-weight: 600;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>TinyBasket</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Gruppo&family=Merienda:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Marck+Script&family=Pacifico&family=Zilla+Slab+Highlight&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="/imgs/favicon.ico" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+  </head>
+  <style media="screen">
+    .carousel-inner img {
+      width: 100%;
+      height: 500px;
+    }
+  </style>
+
+  <body>
+    <nav
+      class="navbar navbar-expand-lg navbar-dark"
+      style="background-color: #363636"
+    >
+      <a class="navbar-brand ml-1" href="/adminhome">
+        <img src="/imgs/logos.png" width="200px" alt="" />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline ml-auto" action="/search" method="post">
+          <input
+            class="form-control mr-sm-2 col-lg-8 col-sm-6 col-6 mr-2"
+            name="search"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">
+            Search
+          </button>
+        </form>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item dropdown active">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-id-badge"></i> Profile
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="/add"
+                ><i class="fas fa-plus"></i> Add Item</a
+              >
+              <a class="dropdown-item" href="/delete"
+                ><i class="far fa-trash-alt"></i> Delete Item</a
+              >
+              <a class="dropdown-item" href="/update"
+                ><i class="fas fa-edit"></i> Update Item</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
+                data-toggle="modal"
+                data-target="#myModal"
+                ><i class="fas fa-history"></i> My Orders</a
+              >
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="/"
+                ><i class="fas fa-sign-out-alt"></i> Log Out</a
+              >
+            </div>
+          </li>
+          <li></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="myModal">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-text-h3">
+              Oops! This option Is under Construction
+            </h4>
+            <button type="button" class="close" data-dismiss="modal">
+              &times;
+            </button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            <img
+              src="/imgs/errorpage1.png"
+              width="50%"
+              class="mx-auto d-block"
+              alt=""
+            />
+            <h3 class="text-center modal-text-h3">We are working on it</h3>
+            <h5 class="text-center modal-text-h4" style="font-weight: lighter">
+              No worries...Problem will be solved soon...
+            </h5>
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

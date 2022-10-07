@@ -1,0 +1,62 @@
+<%- include("../partial/header") -%>
+
+<h1 class="ml-5 mb-3 mt-3 formstyle" style="font-size: 30px; font-weight: bold">
+  Add Item
+</h1>
+<form class="" action="/add" method="post" enctype="multipart/form-data">
+  <div class="form-group">
+    <label class="ml-5 formstyle">Type : </label>
+    <select name="type" class="form-control col-lg-3 mb-3 ml-5" required>
+      <option>Select...</option>
+      <option value="Fruit">Fruit</option>
+      <option value="Vegetable">Vegetable</option>
+      <option value="Drink">Drink</option>
+    </select>
+    <label class="ml-5 formstyle">upload Image : </label>
+    <input class="ml-5" type="file" name="productImage" required /><br />
+
+    <label class="ml-5 formstyle">Product Title</label>
+    <input
+      class="form-control col-lg-3 ml-5 mb-3"
+      type="text"
+      autocomplete="off"
+      name="pname"
+      required
+    />
+    <label class="ml-5 formstyle">company</label>
+    <input
+      class="form-control col-lg-3 ml-5 mb-3"
+      type="text"
+      autocomplete="off"
+      name="pcom"
+      required
+    />
+    <label class="ml-5 formstyle">Price</label>
+    <input
+      class="form-control col-lg-3 ml-5 mb-3"
+      type="text"
+      autocomplete="off"
+      name="pprice"
+      required
+    />
+    <label class="ml-5 formstyle">availability : </label>
+    <select
+      name="availability"
+      class="form-control col-lg-3 mb-3 ml-5"
+      required
+    >
+      <option>Select...</option>
+      <option value="available">Available</option>
+      <option value="currently Unavailable">Currently Unavailable</option>
+    </select>
+  </div>
+  <button
+    class="btn btn-primary btn-lg ml-5 mb-3 formstyle"
+    type="submit"
+    name="button"
+  >
+    Add
+  </button>
+</form>
+
+<%- include("../partial/footer") -%>

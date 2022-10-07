@@ -1,0 +1,214 @@
+<%- include("partial/header") -%>
+
+        <h2 class="title-h2 text-center mt-3">... Search Result ...</h2>
+
+<section>
+        <div class="row text-center  mb-5 ">
+            <% fruits.forEach(function(post){%>
+            <div class="col-lg-3 ml-5 mt-3">
+                <div class="card text-left" style="width: 18rem;">
+                    <img class="card-img-top" src="/imgs/<%= post.productImage %>" height="190px"
+                        alt="<%= post.title %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= post.productName %></h5>
+                        <p class="card-text text-secondary"><%= post.productCompany %></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><%= post.availability %></li>
+                        <li class="list-group-item">
+                            <label for="qty"><%= post.qtytype %> : </label>
+                            <select class="ml-5">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item">Price : ₹ <%= post.price %>.00 </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal"><i
+                                class="fas fa-dollar-sign"></i> Buy Now</a>
+                        <a href="#" class="btn pr-2 ml-3 btn-warning"><i class="fas fa-cart-arrow-down"></i> Cart</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+       
+    </div>
+        <div class="row text-center  mb-5 ">
+            <% vegetables.forEach(function(post){%>
+            <div class="col-lg-3 ml-5 mt-3">
+                <div class="card text-left" style="width: 18rem;">
+                    <img class="card-img-top" src="/imgs/<%= post.productImage %>" height="190px"
+                        alt="<%= post.title %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= post.productName %></h5>
+                        <p class="card-text text-secondary"><%= post.productCompany %></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><%= post.availability %></li>
+                        <li class="list-group-item">
+                            <label for="qty"><%= post.qtytype %> : </label>
+                            <select class="ml-5">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item">Price : ₹ <%= post.price %>.00 </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal"><i
+                                class="fas fa-dollar-sign"></i> Buy Now</a>
+                        <a href="#" class="btn pr-2 ml-3 btn-warning"><i class="fas fa-cart-arrow-down"></i> Cart</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+            
+    </div>
+        <div class="row text-center  mb-5 ">
+            <% dairies.forEach(function(post){%>
+            <div class="col-lg-3 ml-5 mt-3">
+                <div class="card text-left" style="width: 18rem;">
+                    <img class="card-img-top" src="/imgs/<%= post.productImage %>" height="190px"
+                        alt="<%= post.title %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= post.productName %></h5>
+                        <p class="card-text text-secondary"><%= post.productCompany %></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><%= post.availability %></li>
+                        <li class="list-group-item">
+                            <label for="qty"><%= post.qtytype %> : </label>
+                            <select class="ml-5">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item">Price : ₹ <%= post.price %>.00 </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal"><i
+                                class="fas fa-dollar-sign"></i> Buy Now</a>
+                        <a href="#" class="btn pr-2 ml-3 btn-warning"><i class="fas fa-cart-arrow-down"></i> Cart</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+            
+    </div>
+        <div class="row text-center  mb-5 ">
+            <% snacks.forEach(function(post){%>
+            <div class="col-lg-3 ml-5 mt-3">
+                <div class="card text-left" style="width: 18rem;">
+                    <img class="card-img-top" src="/imgs/<%= post.productImage %>" height="190px"
+                        alt="<%= post.title %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= post.productName %></h5>
+                        <p class="card-text text-secondary"><%= post.productCompany %></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><%= post.availability %></li>
+                        <li class="list-group-item">
+                            <label for="qty"><%= post.qtytype %> : </label>
+                            <select class="ml-5">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item">Price : ₹ <%= post.price %>.00 </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal"><i
+                                class="fas fa-dollar-sign"></i> Buy Now</a>
+                        <a href="#" class="btn pr-2 ml-3 btn-warning"><i class="fas fa-cart-arrow-down"></i> Cart</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+           
+    </div>
+
+        <div class="row text-center  mb-5 ">
+            <% items.forEach(function(post){%>
+            <div class="col-lg-3 ml-5 mt-3">
+                <div class="card text-left" style="width: 18rem;">
+                    <img class="card-img-top" src="/imgs/<%= post.productImage %>" height="190px"
+                        alt="<%= post.title %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= post.productName %></h5>
+                        <p class="card-text text-secondary"><%= post.productCompany %></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><%= post.availability %></li>
+                        <li class="list-group-item">
+                            <label for="qty"><%= post.qtytype %> : </label>
+                            <select class="ml-5">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item">Price : ₹ <%= post.price %>.00 </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal"><i
+                                class="fas fa-dollar-sign"></i> Buy Now</a>
+                        <a href="#" class="btn pr-2 ml-3 btn-warning"><i class="fas fa-cart-arrow-down"></i> Cart</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+            
+    </div>
+
+        <div class="row text-center  mb-5 ">
+            <% drinks.forEach(function(post){%>
+            <div class="col-lg-3 ml-5 mt-3">
+                <div class="card text-left" style="width: 18rem;">
+                    <img class="card-img-top" src="/imgs/<%= post.productImage %>" height="190px"
+                        alt="<%= post.title %>">
+                    <div class="card-body">
+                        <h5 class="card-title"><%= post.productName %></h5>
+                        <p class="card-text text-secondary"><%= post.productCompany %></p>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><%= post.availability %></li>
+                        <li class="list-group-item">
+                            <label for="qty"><%= post.qtytype %> : </label>
+                            <select class="ml-5">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </li>
+                        <li class="list-group-item">Price : ₹ <%= post.price %>.00 </li>
+                    </ul>
+                    <div class="card-body">
+                        <a href="#" class="btn btn-secondary" data-toggle="modal" data-target="#myModal"><i
+                                class="fas fa-dollar-sign"></i> Buy Now</a>
+                        <a href="#" class="btn pr-2 ml-3 btn-warning"><i class="fas fa-cart-arrow-down"></i> Cart</a>
+                    </div>
+                </div>
+            </div>
+            <% }); %>
+            
+        </div>
+    </div>
+</section>
+<%- include("partial/footer") -%>

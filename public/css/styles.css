@@ -1,0 +1,136 @@
+body {
+background-image: url("/imgs/bg.jpg");
+background-position: center;
+background-size: cover;
+}
+
+.ccstyle-veg {
+  margin-bottom:15%;
+}
+
+.ccstyle-milk {
+  margin-left: 40%;
+  margin-bottom: 24%;
+}
+
+.ccstyle-tea {
+  margin-bottom: 24%;
+}
+
+.ccstyle-snacks {
+  margin-right: 35%;
+  margin-bottom: 15%;
+}
+
+.ccstyle-juice {
+  margin-right: 30%;
+  margin-bottom: 15%;
+}
+
+.ccstyle-fruits {
+  margin-left: 49.5%;
+  margin-bottom:15%;
+}
+
+.carousel-caption h3 {
+  font-family: 'Marck Script', cursive;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-family: 'Kalam', cursive;
+font-size: 20px;
+}
+
+.carousel-caption .btn {
+  font-family: 'Kaushan Script', cursive;
+font-size: 20px;
+font-weight: bold;
+}
+
+.card-h3 {
+  font-family: 'Marck Script', cursive;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.xyz {
+            background-size: auto;
+            text-align: center;
+            padding-top: 100px;
+        }
+        .btn-circle.btn-sm {
+            width: 30px;
+            height: 30px;
+            padding: 6px 0;
+            border-radius: 15px;
+            font-size: 8px;
+            text-align: center;
+        }
+        .btn-circle.btn-md {
+            width: 50px;
+            height: 60px;
+            padding: 7px 10px;
+            border-radius: 25px;
+            font-size: 10px;
+            text-align: center;
+        }
+        .btn-circle.btn-xl {
+            width: 70px;
+            height: 70px;
+            border-radius: 35px;
+            font-size: 17px;
+            text-align: center;
+            padding: auto;
+
+        }
+
+  .title-h2 {
+    font-family: 'Marck Script', cursive;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .card .card-title {
+    font-family: 'Kalam', cursive;
+  }
+
+  .card .card-text {
+    font-family: 'Baloo Da 2', cursive;
+  }
+
+  .card .list-group-item {
+    font-family: 'Baloo Da 2', cursive;
+  }
+
+  .formstyle {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 20px;
+  }
+
+  .center {
+    width: 37%;
+  background-position: center;
+  position: absolute;
+  left: 30%
+  }
+
+  .imgh2 {
+    font-family: 'Baloo Da 2', cursive;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  .modal-text-head {
+    font-family: 'Marck Script', cursive;
+  }
+
+   .modal-text-h3{
+    font-family: 'Poiret One', cursive;
+font-weight: bolder;
+  }
+
+  .modal-text-h4 {
+    font-family: 'Poiret One', cursive;
+  }
